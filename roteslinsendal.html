@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotes Linsen Dal</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="script/rotes-linsen-dal.js"></script>
+    <script src="script/include.js"></script>
+    <script src="script/responsive-menu.js"></script>
+</head>
+
+<body onload="start()">
+
+    <div w3-include-html="templates/header.html"></div>
+    <div w3-include-html="templates/responsive-menü.html"></div>
+
+    <div class="recipe-main-container">
+        <div class="recipe-headline">
+            <h1>Rotes Linsen Dal</h1>
+        </div>
+        <div class="recipe-img">
+            <img class="recipe-img" src="img/RotesLinsenDal.jpg">
+        </div>
+
+        <div class="preparation-info">
+            <div class="preparations">
+                <img src="img/icons/clock-regular.svg">
+                <span>35 Min</span>
+            </div>
+            <div class="preparations">
+                <img src="img/icons/brain-solid.svg">
+                <span>Simpel</span>
+            </div>
+            <div class="preparations">
+                <img src="img/icons/calendar-alt-regular.svg">
+                <span>04.03.2022</span>
+            </div>
+        </div>
+        <div class="ingredients">
+            <span class="ingredients-text">Zutaten für</span>
+            <input class="ingredients-input" type="number" id="number-of-persons" min="1" value="1">
+            <button id="button-portion" class="ingredients-button button-style" onclick="renderDataOutput()"></button>
+        </div>
+        <div>
+            <table class="recipe-table">
+                <tbody id="ingredients">
+
+                </tbody>
+            </table>
+        </div>
+        <h2>Zubereitung</h2>
+        <div class="preparation-info-2">
+            <div class="preparations">
+                <img src="img/icons/clock-regular.svg">
+                <span>ca. 20 Min</span>
+            </div>
+            <div class="preparations">
+                <img src="img/icons/clock-regular.svg">
+                <span>Gesamtzeit ca. 35 Min</span>
+            </div>
+
+        </div>
+        <div>
+            <p class="description">
+                Öl in einem Topf erhitzten. Die gehackten Zwiebeln dazugeben und 2-3 Minuten glasig dünsten. Dann den Knoblauch und Ingwer hinzugeben und eine weitere Minute anbraten. Die Gewürze hinzugeben und anschwitzen lassen, bis es gut duftet. Die gewaschenen Linsen
+                in den Topf geben und mit Gemüsebrühe aufgießen und aufkochen lassen. Zugedeckt 10 Minuten köcheln lassen, dann die Kokosnussmilch und die Tomaten dazu geben. Den Dal mir Zucker und Zitronensaft abschmecken.
+            </p>
+        </div>
+        <div>
+            <h3>Rezept erstellt von</h3>
+            <div class="creator-info">
+                <img src="img/Jahleel.jpg">
+                <p>Jahleel</p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+</body>
+
+</html>

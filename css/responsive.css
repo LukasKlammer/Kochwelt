@@ -1,0 +1,286 @@
+        @media(max-width: 1000px) {
+            /*Menu*/
+            .responsive-menu {
+                display: flex;
+                justify-content: center;
+                height: 0px;
+                transform: translateY(-200px);
+                transition: all 400ms ease-in-out;
+            }
+            .show-responsive-menu {
+                height: 130px;
+                transform: translateY(0px);
+                transition: all 600ms ease-in-out;
+                border-bottom-style: solid;
+                border-color: rgba(128, 128, 128, 0.514);
+                border-width: 1px;
+                box-shadow: 0px 1.5px rgba(128, 128, 128, 0.315);
+                color: rgb(60, 60, 60);
+            }
+            .menu {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-top: 10px;
+            }
+            .menu a {
+                text-decoration: none;
+                color: black;
+                padding-bottom: 5px;
+                font-weight: bold;
+            }
+            /*Header*/
+            .header-nav {
+                display: none;
+            }
+            .header-container {
+                display: flex;
+                justify-content: center;
+            }
+            .header-logo {
+                width: 150px;
+            }
+            .header-logo-transition {
+                animation: trans-in 600ms;
+            }
+            @keyframes trans-in {
+                0% {
+                    transform: translateX(0px)
+                }
+                70% {
+                    transform: translateX(-150px);
+                }
+            }
+            .header-logo-transition-out {
+                animation: trans-out 500ms;
+            }
+            @keyframes trans-out {
+                0% {
+                    transform: translateX(0px)
+                }
+                70% {
+                    transform: translateX(-150px);
+                }
+            }
+            .burger {
+                width: 24px !important;
+                height: 24px;
+            }
+            .burger-link {
+                display: flex;
+                position: absolute;
+                top: 10px;
+                right: 30px;
+            }
+            .header-img {
+                margin-left: 0px;
+            }
+            /*Footer*/
+            .mobile {
+                display: none;
+            }
+            .footer-img img {
+                width: 50px;
+            }
+            .footer-links {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+                padding-right: 30px;
+            }
+            /*recipes*/
+            h1 {
+                text-align: center;
+                line-height: 40px;
+            }
+            h2 {
+                text-align: center;
+            }
+            .recipe-main-container {
+                margin-left: 16px;
+                margin-right: 16px;
+            }
+            .preparation-info {
+                display: flex;
+                flex-direction: column;
+            }
+            .preparation-info-2 {
+                display: flex;
+                flex-direction: column;
+            }
+            .preparations {
+                margin-right: 0px;
+                margin-bottom: 10px;
+                padding-right: 0px;
+                padding-left: 0px;
+                display: flex;
+                justify-content: center;
+                min-width: 80px;
+            }
+            .ingredients {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            .ingredients-text {
+                text-align: center;
+            }
+            .ingredients-input {
+                width: 50px;
+            }
+            .ingredients-button {
+                width: 70px;
+            }
+            .recipe-table {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            .recipe-table tr td:first-child {
+                padding-left: 10px;
+                width: 150px;
+                text-align: center;
+            }
+            .recipe-table tr td:last-child {
+                width: 200px;
+            }
+            /*home*/
+            .box1 {
+                padding: 30px;
+                margin: 0%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .box1 img {
+                width: 250px;
+                height: 200px;
+            }
+            .box2 {
+                margin: 0%;
+                padding-bottom: 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .box2 img {
+                width: 250px;
+                height: 200px;
+            }
+            .box2-images-container {
+                display: flex;
+                flex-direction: column;
+            }
+            .box2-images {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 10px;
+            }
+            .box2-images-container h3 {
+                padding-top: 5px;
+            }
+            .box3 {
+                padding: 30px;
+                padding-top: 20px;
+                padding-bottom: 15px;
+                margin: 0%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .box3 img {
+                width: 250px;
+                height: 200px;
+            }
+            .box3 p {
+                text-align: center;
+                padding-right: 0px;
+            }
+            .box3 h2 {
+                padding-bottom: 30px;
+            }
+            .text-box {
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+            }
+            .box1-text-button {
+                padding-left: 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .box1-text-button p {
+                text-align: center;
+                padding-bottom: 10px;
+            }
+            /*Contact*/
+            .backround-form {
+                width: 100%;
+                background-image: url('../img/spoon.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .contact-form-container {
+                display: flex;
+                justify-content: center;
+                padding-top: 200px;
+            }
+            .contact-form {
+                position: unset;
+            }
+            /*impressum*/
+            .impressum {
+                padding-left: 0px;
+                padding: 10px;
+                text-align: center;
+            }
+            .impressum h2 {
+                line-height: 50px;
+            }
+            /*Datenschutz*/
+            .datenschutz {
+                padding-left: 0px;
+                padding-right: 0px;
+                padding: 20px;
+                font-size: 20px;
+                text-align: center;
+            }
+            .datenschutz h1 {
+                text-align: center;
+                font-size: 30px;
+            }
+            .datenschutz h2 {
+                font-size: 25px;
+                display: block;
+            }
+            .datenschutz a {
+                word-break: break-all;
+            }
+        }
+        
+        @media(max-width: 1550px) {
+            .box2 {
+                margin: 0%;
+                padding-bottom: 0px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .box2-images {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding-bottom: 10px;
+            }
+            .box2-images-container {
+                display: flex;
+                flex-direction: column;
+            }
+            .box2 img {
+                max-width: 500px;
+                max-height: 350px;
+            }
+        }

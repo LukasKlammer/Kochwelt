@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spaghetti Bolognese</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="script/include.js"></script>
+    <script src="script/bolognese-script.js"></script>
+    <script src="script/responsive-menu.js"></script>
+</head>
+
+<body onload="start()">
+
+    <div w3-include-html="templates/header.html"></div>
+    <div w3-include-html="templates/responsive-menü.html"></div>
+
+    <div class="recipe-main-container">
+        <div class="recipe-headline">
+            <h1>Spaghetti Bolognese</h1>
+        </div>
+
+        <div class="recipe-img">
+            <img class="recipe-img" src="img/bolognese.jpg">
+        </div>
+
+        <div class="preparation-info">
+            <div class="preparations">
+                <img src="img/icons/clock-regular.svg">
+                <span>20 Min</span>
+            </div>
+            <div class="preparations">
+                <img src="img/icons/brain-solid.svg">
+                <span>Simpel</span>
+            </div>
+            <div class="preparations">
+                <img src="img/icons/calendar-alt-regular.svg">
+                <span>04.03.2022</span>
+            </div>
+        </div>
+        <div class="ingredients">
+            <span class="ingredients-text">Zutaten für</span>
+            <input class="ingredients-input" type="number" id="number-of-persons" min="1" value="1">
+            <button id="button-portion" class="ingredients-button button-style" onclick="renderDataOutput()"></button>
+        </div>
+        <table class="recipe-table">
+            <tbody id="ingredients">
+
+            </tbody>
+        </table>
+        <div>
+            <h2>Zubereitung</h2>
+            <div class="preparation-info-2">
+                <div class="preparations">
+                    <img src="img/icons/clock-regular.svg">
+                    <span>ca. 15 Min</span>
+                </div>
+                <div class="preparations">
+                    <img src="img/icons/clock-regular.svg">
+                    <span>Gesamtzeit ca. 20 Min</span>
+                </div>
+
+            </div>
+            <div>
+                <p class="description">Zwiebel und Möhre schälen und in feine Würfel schneiden. Hackfleisch in die Pfanne geben, langsam erhitzen und im eigenen Fett unter Rühren anbraten. Salzen und pfeffern. Zwiebeln und Möhren dazugeben und kurz mitbraten. Mit der Brühe
+                    ablöschen, Tomatenmark und die gestückelten Tomaten unterrühren. Etwa 40 Minuten einkochen lassen. Spaghetti in Salzwasser bissfest kochen, abgießen, abschrecken und zusammen mit der Sauce servieren.
+                </p>
+            </div>
+            <div>
+                <h3>Rezept erstellt von</h3>
+                <div class="creator-info">
+                    <img src="img/Marco.PNG">
+                    <p>Marco</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    </div>
+    <div w3-include-html="templates/footer.html"></div>
+
+
+</body>
+
+</html>

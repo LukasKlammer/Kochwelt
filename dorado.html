@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorade auf frischem Gemüse</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <script src="script/dorado-script.js"></script>
+    <script src="script/include.js"></script>
+    <script src="script/responsive-menu.js"></script>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body onload="start()">
+
+    <div w3-include-html="templates/header.html"></div>
+    <div w3-include-html="templates/responsive-menü.html"></div>
+
+    <div class="recipe-main-container">
+        <h1 class="recipe-headline">Dorade auf frischem Gemüse</h1>
+        <img class="recipe-img" src="img/dorado_image.jpg" alt="Dorade auf frischem Gemüse">
+        <div class="preparation-info">
+            <div class="preparations">
+                <img src="img/icons/clock-regular.svg" alt="">
+                <span>20 Minuten</span>
+            </div>
+            <div class="preparations">
+                <img src="img/icons/brain-solid.svg" alt="">
+                <span>einfach</span>
+            </div>
+            <div class="preparations">
+                <img src="img/icons/calendar-alt-regular.svg" alt="">
+                <span>05.03.2022</span>
+            </div>
+        </div>
+        <div class="ingredients">
+            <span class="ingredients-text">Zutaten für</span>
+            <input class="ingredients-input" type="number" id="number-of-persons" min="1" value="1">
+            <button id="button-portion" class="ingredients-button button-style" onclick="renderDataOutput()"></button>
+        </div>
+        <div>
+            <table class="recipe-table">
+                <tbody id="ingredients">
+
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <h2>Zubereitung</h2>
+            <div class="preparation-info-2">
+                <div class="preparations">
+                    <img src="img/icons/clock-regular.svg" alt="">
+                    <span>ca. 15 Minuten</span>
+                </div>
+                <div class="preparations">
+                    <img src="img/icons/clock-regular.svg" alt="">
+                    <span>Gesamtzeit ca. 20 Minuten</span>
+                </div>
+            </div>
+            <div>
+                <p class="description">
+                    Die Dorade einige Stunden vor dem Braten aus dem Kühlschrank nehmen. Das Gemüse in Stücke schneiden und für ca. 15 Minuten in einem Topf dünsten. Währenddessen die leicht eingeölte Pfanne erhitzen und den Teller im Backrohr wärmen. Die Dorade beidseitig
+                    goldbraun anbraten. Mit Rosmarin und Salz würzen. Anschließend den gebratenen Fisch auf dem Teller mit dem Gemüse, den Cocktail-Tomaten sowie dem Hüttenkäse und dem selbstgemachten Brot anrichten. Fertig! Guten Appetit!
+                </p>
+            </div>
+            <div>
+                <h3>Rezept erstellt von</h3>
+                <div class="creator-info">
+                    <img src="img/Lukas.PNG">
+                    <p>Lukas Klammer</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div w3-include-html="templates/footer.html"></div>
+
+</body>
+
+</html>
